@@ -1,0 +1,30 @@
+<div class="product_div">
+    <p>PRODUCTS</p>
+</div>
+<div class="products_big">
+    {% for product in products  %}
+        <div class="same">
+            <div>
+                <div>
+                    <span>SALE</span>
+                </div>
+                <div>
+                    <img src="img/bag.png" alt="bag">
+                </div>
+                <div></div>
+                <div class="texts">
+                    <span>BAG medical</span>
+                </div>
+                <div class="star">
+                    <img src="img/star.png" alt="">
+                </div>
+                <div>
+                    <span>{{ product.price }}</span>
+                    <span>$19.50</span>
+                </div>
+
+            </div>
+        </div>
+    {% endfor %}
+
+</div>
